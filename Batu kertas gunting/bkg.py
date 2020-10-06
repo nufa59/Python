@@ -33,7 +33,7 @@ print('==== Batu Kertas Gunting ===')
 print('============================ \n') 
 sleep(0.2)
 while True:
-    pemain = str(input('Pilih batu, ketas, atau gunting : '))
+    pemain = str(input('Pilih batu, ketas, atau gunting : ')).lower()
     komputer = komp()
     hasil = banding(pemain, komputer)
     if(not (pemain == 'batu' or pemain == 'kertas' or pemain == 'gunting')):
